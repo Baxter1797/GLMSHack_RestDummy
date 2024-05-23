@@ -3,8 +3,8 @@
 You'll need to have Java installed on your machine, JDK17 or newer.
 
 ## Installation
-Clone the repository to your local machine.
-Run the .jar file on your local machine. This will spin up the service on **`localhost:8080`**.
+Clone the repository to your local machine or download the .jar file directly from GitHub.
+Run the .jar file on your local machine from the command line using the following command: java -jar dummyGLMS.jar. This will spin up the service on **`localhost:8080`**.
 
 ## Usage
 You can make a request in the web browser to test the API response. For example: `localhost:8080/EEAPassport`. This will return one EEAPassport object.
