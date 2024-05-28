@@ -16,7 +16,7 @@ import com.glms.dummy.api.model.EEAPassport;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @RestController
 public class EEAPassportController {
 	private static final String[] names = {"EEAP123","EEAP543","EEAP367","EEAP125","EEAP541","EEAP362","EEAP129","EEAP549","EEAP369","EEAP714"};
@@ -24,7 +24,7 @@ public class EEAPassportController {
 	private static final String[] regulators = {"Advertising Standards Agency", "Bank of England", "Bank of Ireland","Financial Conduct Authority","Banco de Espana"};
 	private static final String[] entities = {"Lloyds Bank PLC", "Lloyds Bank Corporate Markets PLC", "Halifax Share Dealing Limited", "Bank of Scotland PLC", "Scottish Widows Limited"};
 	private static final String[] status = {"Active", "Cancelled", "Closed", "Expired", "In Liquidation", "Sold", "Terminated"};
-
+		
 		@GetMapping("/EEAPassport")
 		public String getEEAPassports(HttpServletRequest request, HttpServletResponse response) {
 			
